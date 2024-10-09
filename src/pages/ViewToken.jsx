@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar";
-import tokenImage from "../assets/1.JPG";
+import tokenImage from "../assets/1.PNG";
 import { IoArrowBackOutline } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 
