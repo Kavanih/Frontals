@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar";
-import Logo from "../assets/logo.png";
+import Logo from "../assets/logo.PNG";
 import HomeImageBottom from "../components/HomeImageBottom";
 
 const Home = () => {
