@@ -53,17 +53,20 @@ body {
   font-family: naughty;
 }
 .gallery-top {
-  @apply bg-green-500/80 p-4 text-white text-3xl;
+  @apply bg-green-500/80 p-4 text-white text-3xl flex justify-between items-center;
 }
 .search {
   /* @apply grid grid-cols-searchGrid h-screen w-screen overflow-hidden; */
-  @apply grid grid-cols-searchGrid;
+  @apply grid md:grid-cols-searchGrid relative;
   font-family: "Staatliches", sans-serif;
 }
 
 .search-left {
-  @apply bg-green-500/80 h-screen p-2 text-white overflow-y-scroll overflow-x-hidden sticky top-0;
+  @apply bg-green-500/80 h-screen p-2 text-white overflow-y-scroll overflow-x-hidden md:sticky absolute top-0 md:left-0 -left-full max-w-80 duration-500 z-10;
   /* @apply bg-green-500/80 h-full p-2 text-white overflow-y-scroll overflow-x-hidden; */
+}
+.search-left.active {
+  @apply left-0;
 }
 .option-sorts {
   @apply mt-4 flex flex-col gap-4;

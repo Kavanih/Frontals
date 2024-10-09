@@ -3,18 +3,30 @@ import { NormalSorter, SortingComponent } from "../components/SortingComponent";
 import { FaSortNumericDown, FaSortNumericDownAlt } from "react-icons/fa";
 import { sorts } from "../constants/sorts";
 import GalleryCard from "../components/GalleryCard";
+import { FiMenu } from "react-icons/fi";
+import { useState } from "react";
+import { LiaTimesSolid } from "react-icons/lia";
 
 const Gallery = () => {
+  const [openSort, setOpenSort] = useState(false);
+
   return (
     <div>
       <Navbar />
 
       <div className="gallery-top">
-        <div className="gallery-title">Frogtails</div>
+        <div className="gallery-title">Frogtals</div>
+
+        <div
+          className="cursor-pointer md:hidden w-10 h-10 flex items-center justify-center border border-white rounded-md"
+          onClick={() => setOpenSort(!openSort)}
+        >
+          {!openSort ? <FiMenu /> : <LiaTimesSolid />}
+        </div>
       </div>
 
       <div className="search">
-        <div className="search-left no-scrollbar">
+        <div className={`search-left no-scrollbar ${openSort ? "active" : ""}`}>
           <div className="">
             <div>Search</div>
             <input

@@ -7,7 +7,7 @@ const Home = () => {
     <div className="">
       <Navbar />
 
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center mt-10">
         <img src={Logo} alt="" className="w-4/5" />
       </div>
 
