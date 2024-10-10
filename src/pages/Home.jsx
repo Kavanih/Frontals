@@ -4,7 +4,7 @@ import HomeImageBottom from "../components/HomeImageBottom";
 
 const Home = () => {
   return (
-    <div className="">
+    <div className="w-screen h-screen overflow-hidden">
       <Navbar />
 
       <div className="flex items-center justify-center mt-44">

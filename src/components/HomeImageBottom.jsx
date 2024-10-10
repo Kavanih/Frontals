@@ -6,10 +6,11 @@ import image4 from "../assets/4.PNG";
 import image5 from "../assets/5.PNG";
 import image6 from "../assets/6.PNG";
 import image7 from "../assets/7.PNG";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const HomeImageBottom = () => {
   const imagesRef = useRef([]);
+  const groupRef = useRef();
 
   useEffect(() => {
     const tl = gsap.timeline();
@@ -21,10 +22,20 @@ const HomeImageBottom = () => {
         { y: "0%", duration: 0.6, delay: index === 0 ? 0.5 : 0 }
       );
     });
+
+    tl.to(groupRef.current, {
+      y: "20%",
+      repeat: -1,
+      yoyo: true,
+      duration: 0.4,
+    });
   }, []);
 
   return (
-    <div className="absolute bottom-0 left-0 right-0">
+    <div
+      className="absolute bottom-0 left-0 right-0 overflow-hidden"
+      ref={groupRef}
+    >
       <div className="grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-7 w-screen overflow-hidden">
         <img
           src={image6}

@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import Logo from "../assets/logo.PNG";
+import { RiTwitterXLine } from "react-icons/ri";
 
-const SingleLink = ({ text, link }) => {
+const SingleLink = ({ text, link, icon }) => {
   return (
     <Link to={link} className="navbar-link">
+      {icon && icon}
       {text}
     </Link>
   );
@@ -22,7 +24,14 @@ const Navbar = () => {
         <SingleLink text={"Home"} link={"/"} />
         <SingleLink text={"Mint"} link={"/"} />
         <SingleLink text={"gallery"} link={"/gallery"} />
-        <SingleLink text={"T"} link={"/"} />
+
+        <Link
+          to={"https://x.com/Frogtals"}
+          className="navbar-link"
+          target="_blank"
+        >
+          <RiTwitterXLine />
+        </Link>
       </div>
 
       <div></div>
