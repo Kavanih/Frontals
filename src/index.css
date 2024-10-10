@@ -131,3 +131,29 @@ body {
   /* @apply p-2 grid gap-4 w-full h-full overflow-scroll overflow-x-hidden; */
   grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
 }
+
+.mint {
+  background-image: url("./assets/mint.JPG");
+  font-family: "Press Start 2P", sans-serif;
+  @apply w-screen h-screen bg-no-repeat bg-cover flex justify-center items-center bg-center;
+}
+
+.mint-text {
+  animation: blink 1s infinite;
+  @apply text-2xl md:text-5xl xl:text-[5rem];
+}
+
+@keyframes blink {
+  0% {
+    color: #00ff99;
+  }
+  25% {
+    color: #ff4545;
+  }
+  50% {
+    color: brown;
+  }
+  100% {
+    color: black;
+  }
+}

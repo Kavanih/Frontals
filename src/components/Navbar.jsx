@@ -22,7 +22,7 @@ const Navbar = () => {
 
       <div className="flex gap-3 sm:gap-6 md:col-span-3 justify-center items-center flex-wrap">
         <SingleLink text={"Home"} link={"/"} />
-        <SingleLink text={"Mint"} link={"/"} />
+        <SingleLink text={"Mint"} link={"/mint"} />
         <SingleLink text={"gallery"} link={"/gallery"} />
 
         <Link
