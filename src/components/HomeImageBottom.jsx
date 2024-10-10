@@ -6,7 +6,7 @@ import image4 from "../assets/4.PNG";
 import image5 from "../assets/5.PNG";
 import image6 from "../assets/6.PNG";
 import image7 from "../assets/7.PNG";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
 const HomeImageBottom = () => {
   const imagesRef = useRef([]);

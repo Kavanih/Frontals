@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import CardImage from "../assets/1.PNG";
 import linkImage from "../assets/img/link-image.png";
 
-const GalleryCard = () => {
+const GalleryCard = ({ item }) => {
   return (
     <div className="">
       <div className="card">
@@ -16,7 +16,7 @@ const GalleryCard = () => {
         <div>
           <Link to={"/token/usjkk89"}>
             <img
-              src={CardImage}
+              src={item.image}
               alt=""
               className="w-full object-cover h-full"
             />
@@ -24,7 +24,7 @@ const GalleryCard = () => {
         </div>
 
         <div className="card-top">
-          <div className="text-white">Frogtails</div>
+          <div className="text-white">Frogtals</div>
           <div className="text-white">#1100</div>
         </div>
       </div>
