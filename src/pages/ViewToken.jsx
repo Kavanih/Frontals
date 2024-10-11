@@ -1,7 +1,9 @@
 import Navbar from "../components/Navbar";
 import tokenImage from "../assets/1.PNG";
 import { IoArrowBackOutline } from "react-icons/io5";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { galleryData } from "../constants/galleryData";
 
 const TokenDetails = ({ title, value, percent }) => {
   return (
@@ -19,6 +21,13 @@ const TokenDetails = ({ title, value, percent }) => {
 
 const ViewToken = () => {
   const navigate = useNavigate();
+  const [currentToken, setCurrentToken] = useState({});
+  const { id } = useParams();
+
+  useEffect(() => {
+    const curr = galleryData.find((item) => item.tokenId === id);
+    setCurrentToken(curr);
+  }, [id]);
 
   return (
     <div>
@@ -34,8 +43,12 @@ const ViewToken = () => {
       </div>
 
       <div className="max-w-xl mx-auto my-10 font-staatliches bg-green-800 text-white p-6 rounded-lg w-11/12">
-        <div className="text-center text-4xl mb-4">frogtails #875</div>
-        <img src={tokenImage} alt="" className="w-full mb-10 rounded-md" />
+        <div className="text-center text-4xl mb-4">frogtails #{id}</div>
+        <img
+          src={currentToken?.image}
+          alt=""
+          className="w-full mb-10 rounded-md"
+        />
 
         <div className="flex flex-col gap-4">
           <TokenDetails title={"BACKGROUND"} value={"Space"} percent={"1.5"} />

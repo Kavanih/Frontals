@@ -58,7 +58,7 @@ const Gallery = () => {
         </div>
         <div className="search-right no-scrollbar">
           {galleryData.map((item, idx) => (
-            <GalleryCard key={idx} item={item} />
+            <GalleryCard key={idx} item={item} index={idx + 1} />
           ))}
         </div>
       </div>

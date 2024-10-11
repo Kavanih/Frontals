@@ -1,27 +1,23 @@
-import image1 from "../assets/1.PNG";
-import image2 from "../assets/2.PNG";
-import image3 from "../assets/3.PNG";
-import image4 from "../assets/4.PNG";
-import image5 from "../assets/5.PNG";
-import image6 from "../assets/6.PNG";
-import image7 from "../assets/7.PNG";
-import image8 from "../assets/8.PNG";
-import image9 from "../assets/9.PNG";
-import image10 from "../assets/10.PNG";
-import image11 from "../assets/11.PNG";
-import image12 from "../assets/12.PNG";
+import image1 from "../assets/img/BGS/IMG_7423.JPG";
+import image2 from "../assets/img/BGS/IMG_7424.JPG";
+import image3 from "../assets/img/BGS/IMG_7425.JPG";
+import image4 from "../assets/img/BGS/IMG_7428.JPG";
+import image5 from "../assets/img/BGS/IMG_7435.JPG";
+import image6 from "../assets/img/BGS/IMG_7476.JPG";
+import image7 from "../assets/img/BGS/IMG_7480.JPG";
+import image8 from "../assets/img/BGS/IMG_7481.JPG";
+import image9 from "../assets/img/BGS/IMG_7482.JPG";
+import image10 from "../assets/img/BGS/IMG_7484.JPG";
 
 export const galleryData = [
-  { image: image1 },
-  { image: image2 },
-  { image: image3 },
-  { image: image4 },
-  { image: image5 },
-  { image: image6 },
-  { image: image7 },
-  { image: image8 },
-  { image: image9 },
-  { image: image10 },
-  { image: image11 },
-  { image: image12 },
+  { image: image1, tokenId: "7423" },
+  { image: image2, tokenId: "7424" },
+  { image: image3, tokenId: "7425" },
+  { image: image4, tokenId: "7428" },
+  { image: image5, tokenId: "7435" },
+  { image: image6, tokenId: "7476" },
+  { image: image7, tokenId: "7480" },
+  { image: image8, tokenId: "7481" },
+  { image: image9, tokenId: "7482" },
+  { image: image10, tokenId: "7484" },
 ];
