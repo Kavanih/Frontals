@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import CardImage from "../assets/1.PNG";
 import linkImage from "../assets/img/link-image.png";
 
 const GalleryCard = ({ item }) => {

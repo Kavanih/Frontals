@@ -30,7 +30,7 @@ const Navbar = () => {
           className="navbar-link"
           target="_blank"
         >
-          <RiTwitterXLine />
+          <RiTwitterXLine className="text-xl" />
         </Link>
       </div>
 

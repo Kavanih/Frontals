@@ -24,7 +24,7 @@ const HomeImageBottom = () => {
     });
 
     tl.to(groupRef.current, {
-      y: "20%",
+      y: "10%",
       repeat: -1,
       yoyo: true,
       duration: 0.4,
