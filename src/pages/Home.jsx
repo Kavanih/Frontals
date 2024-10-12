@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar";
-import Logo from "../assets/logo.PNG";
+import Logo from "../assets/logo no frog.PNG";
 import HomeImageBottom from "../components/HomeImageBottom";
 
 const Home = () => {
@@ -7,7 +7,7 @@ const Home = () => {
     <div className="w-screen h-screen overflow-hidden">
       <Navbar />
 
-      <div className="flex items-center justify-center mt-44">
+      <div className="flex items-center justify-center md:mt-44 mt-10">
         <img src={Logo} alt="" className="w-4/5" />
       </div>
 
