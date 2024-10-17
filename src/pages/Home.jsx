@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
-import Logo from "../assets/logo no frog.PNG";
+import Logo from "../assets/logo.PNG";
+// import Logo from "../assets/logo no frog.PNG";
 import HomeImageBottom from "../components/HomeImageBottom";
 
 const Home = () => {
