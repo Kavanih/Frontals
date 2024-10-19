@@ -4,6 +4,7 @@ import { IoArrowBackOutline } from "react-icons/io5";
 import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { galleryData } from "../constants/galleryData";
+import { metadata } from "../constants/metadata";
 
 const TokenDetails = ({ title, value, percent }) => {
   return (
@@ -11,9 +12,8 @@ const TokenDetails = ({ title, value, percent }) => {
       <div>{title}</div>
 
       <div className="flex justify-between bg-gray-50 text-black rounded-md p-1 mt-3">
-        {/* <div className="flex justify-between bg-gray-50 text-gray-400 rounded-md p-1 mt-3"> */}
         <div>{value}</div>
-        <div>{percent}%</div>
+        <div>{percent}</div>
       </div>
     </div>
   );
@@ -25,7 +25,7 @@ const ViewToken = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    const curr = galleryData.find((item) => item.tokenId === id);
+    const curr = metadata.find((item) => item.tokenId === id);
     setCurrentToken(curr);
   }, [id]);
 
@@ -44,22 +44,21 @@ const ViewToken = () => {
 
       <div className="max-w-xl mx-auto my-10 font-staatliches bg-green-800 text-white p-6 rounded-lg w-11/12">
         <div className="text-center text-4xl mb-4">frogtails #{id}</div>
-        <img
-          src={currentToken?.image}
-          alt=""
-          className="w-full mb-10 rounded-md"
-        />
+        <img src={currentToken?.image} alt="" className="w-full  rounded-md" />
+        <div className="mb-10 mt-3 mb-10">
+          <div className="text-3xl">{currentToken.name}</div>
+          <div className="">{currentToken.description}</div>
+        </div>
 
         <div className="flex flex-col gap-4">
-          <TokenDetails title={"BACKGROUND"} value={"Space"} percent={"1.5"} />
-          <TokenDetails title={"body"} value={"bill"} percent={"1.5"} />
-          <TokenDetails title={"mouth"} value={"teeth"} percent={"1.5"} />
-          <TokenDetails title={"eye"} value={"diamond"} percent={"1.5"} />
-          <TokenDetails title={"eyewear"} value={"meter"} percent={"1.5"} />
-          <TokenDetails title={"headwear"} value={"bunshoo"} percent={"1.5"} />
-          <TokenDetails title={"cloth"} value={"none"} percent={"1.5"} />
-          <TokenDetails title={"earing"} value={"none"} percent={"1.5"} />
-          <TokenDetails title={"unique fox"} value={"none"} percent={"1.5"} />
+          {currentToken?.attributes?.map((item, idx) => (
+            <TokenDetails
+              title={item.trait_type}
+              value={item.value}
+              percent={item.rarity}
+              key={idx}
+            />
+          ))}
         </div>
       </div>
     </div>

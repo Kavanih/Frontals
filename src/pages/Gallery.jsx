@@ -6,7 +6,8 @@ import GalleryCard from "../components/GalleryCard";
 import { FiMenu } from "react-icons/fi";
 import { useState } from "react";
 import { LiaTimesSolid } from "react-icons/lia";
-import { galleryData } from "../constants/galleryData";
+// import { galleryData } from "../constants/galleryData";
+import { metadata } from "../constants/metadata";
 
 const Gallery = () => {
   const [openSort, setOpenSort] = useState(false);
@@ -57,7 +58,7 @@ const Gallery = () => {
           </div>
         </div>
         <div className="search-right no-scrollbar">
-          {galleryData.map((item, idx) => (
+          {metadata.map((item, idx) => (
             <GalleryCard key={idx} item={item} index={idx + 1} />
           ))}
         </div>
