@@ -60,13 +60,12 @@ body {
 }
 .search {
   /* @apply grid grid-cols-searchGrid h-screen w-screen overflow-hidden; */
-  @apply grid md:grid-cols-searchGrid relative;
+  @apply relative;
   font-family: "Staatliches", sans-serif;
 }
 
 .search-left {
   @apply bg-green-500/80 h-screen p-2 text-white overflow-y-scroll overflow-x-hidden md:sticky absolute top-0 md:left-0 -left-full max-w-80 duration-500 z-10;
-  /* @apply bg-green-500/80 h-full p-2 text-white overflow-y-scroll overflow-x-hidden; */
 }
 .search-left.active {
   @apply left-0;
@@ -76,7 +75,7 @@ body {
 }
 
 .card {
-  @apply w-full h-[300px] relative rounded-md overflow-hidden grid;
+  @apply w-full h-full relative rounded-md overflow-hidden grid;
   grid-template-rows: 3rem 1fr 3rem;
   border-radius: 10px;
   isolation: isolate;
@@ -127,9 +126,9 @@ body {
   @apply bg-black/80 p-2 flex justify-between items-center;
 }
 .search-right {
-  @apply p-2 grid gap-4 w-full min-h-screen h-fit;
+  @apply p-2 grid gap-4 w-full h-fit;
   /* @apply p-2 grid gap-4 w-full h-full overflow-scroll overflow-x-hidden; */
-  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
 }
 
 .mint {

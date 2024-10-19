@@ -6,11 +6,23 @@ import GalleryCard from "../components/GalleryCard";
 import { FiMenu } from "react-icons/fi";
 import { useState } from "react";
 import { LiaTimesSolid } from "react-icons/lia";
-// import { galleryData } from "../constants/galleryData";
 import { metadata } from "../constants/metadata";
 
 const Gallery = () => {
   const [openSort, setOpenSort] = useState(false);
+  const [query, setQuery] = useState("");
+  const [metas, setMetas] = useState(metadata);
+
+  const filterData = () => {
+    const newData = metas.filter((item) => {
+      return (
+        item.name.toLowerCase().includes(query.toLowerCase()) ||
+        item.tokenId.toLowerCase().includes(query.toLowerCase())
+      );
+    });
+
+    return newData;
+  };
 
   return (
     <div>
@@ -28,7 +40,7 @@ const Gallery = () => {
       </div>
 
       <div className="search">
-        <div className={`search-left no-scrollbar ${openSort ? "active" : ""}`}>
+        {/* <div className={`search-left no-scrollbar ${openSort ? "active" : ""}`}>
           <div className="">
             <div>Search</div>
             <input
@@ -56,11 +68,29 @@ const Gallery = () => {
               ))}
             </div>
           </div>
-        </div>
-        <div className="search-right no-scrollbar">
-          {metadata.map((item, idx) => (
-            <GalleryCard key={idx} item={item} index={idx + 1} />
-          ))}
+        </div> */}
+
+        <div>
+          <div className="flex justify-center py-2">
+            <input
+              type="text"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              className="bg-gray-300 w-full max-w-lg py-2 px-4 rounded-md outline-green-500"
+              placeholder="Search Token by name or token id"
+            />
+          </div>
+          <div className="search-right no-scrollbar">
+            {filterData().map((item, idx) => (
+              <GalleryCard key={idx} item={item} index={idx + 1} />
+            ))}
+          </div>
+
+          {filterData() < 1 && (
+            <div className="text-center text-4xl text-black">
+              No Token found
+            </div>
+          )}
         </div>
       </div>
     </div>
