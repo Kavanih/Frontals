@@ -11,9 +11,7 @@
 }
 
 body {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
-    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-family: "Staatliches", sans-serif;
   @apply w-screen overflow-x-hidden;
 }
 
@@ -34,7 +32,7 @@ body {
   @apply h-screen w-screen bg-cover bg-no-repeat overflow-y-scroll overflow-x-hidden bg-center bg-[url("./assets/img/bgees.jpg")] md:bg-[url("./assets/IMG_8336.JPG")];
 }
 .navbar-link {
-  @apply bg-green-500 text-white px-4 p-2 text-sm rounded-md uppercase font-bold;
+  @apply bg-green-500 text-white px-3 p-2 text-sm rounded-md uppercase font-bold;
   font-family: "Press Start 2P", sans-serif;
 }
 .home-bottom-image {
@@ -155,4 +153,8 @@ body {
   100% {
     color: black;
   }
+}
+
+.mobile-nav-link {
+  @apply text-white font-bold text-2xl;
 }

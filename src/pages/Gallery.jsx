@@ -1,20 +1,13 @@
 import Navbar from "../components/Navbar";
-import { NormalSorter, SortingComponent } from "../components/SortingComponent";
-import { FaSortNumericDown, FaSortNumericDownAlt } from "react-icons/fa";
-import { sorts } from "../constants/sorts";
 import GalleryCard from "../components/GalleryCard";
-import { FiMenu } from "react-icons/fi";
 import { useState } from "react";
-import { LiaTimesSolid } from "react-icons/lia";
 import { metadata } from "../constants/metadata";
 
 const Gallery = () => {
-  const [openSort, setOpenSort] = useState(false);
   const [query, setQuery] = useState("");
-  const [metas, setMetas] = useState(metadata);
 
   const filterData = () => {
-    const newData = metas.filter((item) => {
+    const newData = metadata.filter((item) => {
       return (
         item.name.toLowerCase().includes(query.toLowerCase()) ||
         item.tokenId.toLowerCase().includes(query.toLowerCase())
@@ -30,13 +23,6 @@ const Gallery = () => {
 
       <div className="gallery-top">
         <div className="gallery-title">Frogtals</div>
-
-        <div
-          className="cursor-pointer md:hidden w-10 h-10 flex items-center justify-center border border-white rounded-md"
-          onClick={() => setOpenSort(!openSort)}
-        >
-          {!openSort ? <FiMenu /> : <LiaTimesSolid />}
-        </div>
       </div>
 
       <div className="search">
@@ -71,12 +57,12 @@ const Gallery = () => {
         </div> */}
 
         <div>
-          <div className="flex justify-center py-2">
+          <div className="flex justify-center py-4">
             <input
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              className="bg-gray-300 w-full max-w-lg py-2 px-4 rounded-md outline-green-500"
+              className="bg-white w-4/5 py-2 px-4 rounded-md outline-green-500"
               placeholder="Search Token by name or token id"
             />
           </div>
