@@ -1,3 +1,4 @@
+import CountdownTimer from "../components/CountdownTimer";
 import Navbar from "../components/Navbar";
 
 const Mint = () => {
@@ -5,7 +6,8 @@ const Mint = () => {
     <div>
       <div className="mint">
         <Navbar />
-        <div className="mint-text">COMING SOON</div>
+        <CountdownTimer targetDate="Oct 23, 2024 17:00:00 UTC" />
+        {/* <div className="mint-text">COMING SOON</div> */}
       </div>
     </div>
   );

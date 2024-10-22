@@ -137,7 +137,8 @@ body {
 
 .mint-text {
   animation: blink 1s infinite;
-  @apply text-2xl md:text-5xl xl:text-[5rem] text-center mt-40;
+  @apply text-2xl md:text-3xl xl:text-[3rem] text-center mt-10;
+  /* @apply text-2xl md:text-5xl xl:text-[5rem] text-center mt-40; */
 }
 
 @keyframes blink {
