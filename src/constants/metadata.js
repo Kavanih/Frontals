@@ -14,7 +14,7 @@ export const metadata = [
     name: "Pilot",
     description: "Fragtal character as Pilot with blue Cloudy background.",
     image: image1,
-    tokenId: "7423",
+    tokenId: "1243",
     attributes: [
       {
         trait_type: "Character",
@@ -68,7 +68,7 @@ export const metadata = [
     description:
       "FrogTal character as Lady frog on Lily pad with water background.",
     image: image2,
-    tokenId: "7424",
+    tokenId: "1783",
     attributes: [
       {
         trait_type: "Character",
@@ -127,7 +127,7 @@ export const metadata = [
     description:
       "FrogTal character as Lady frog on Lily pad with water background.",
     image: image3,
-    tokenId: "7425",
+    tokenId: "2021",
     attributes: [
       {
         trait_type: "Character",
@@ -186,7 +186,7 @@ export const metadata = [
     description:
       "FrogTal character as Male frog on Lily pad with water background.",
     image: image4,
-    tokenId: "7428",
+    tokenId: "0243",
     attributes: [
       {
         trait_type: "Character",
@@ -244,7 +244,7 @@ export const metadata = [
     name: "Frog with Cigar",
     description: "FrogTal character with Cigar and mountains background.",
     image: image5,
-    tokenId: "7435",
+    tokenId: "1872",
     attributes: [
       {
         trait_type: "Character",
@@ -302,7 +302,7 @@ export const metadata = [
     name: "Spy",
     description: "FrogTal character as Spy in London background.",
     image: image6,
-    tokenId: "7476",
+    tokenId: "1906",
     attributes: [
       {
         trait_type: "Character",
@@ -360,7 +360,7 @@ export const metadata = [
     name: "Scientist",
     description: "FrogTal character as Scientist in laboratory background.",
     image: image7,
-    tokenId: "7480",
+    tokenId: "1875",
     attributes: [
       {
         trait_type: "Character",
@@ -418,7 +418,7 @@ export const metadata = [
     name: "Chef",
     description: "FrogTal character as Chef in Kitchen background.",
     image: image8,
-    tokenId: "7481",
+    tokenId: "1760",
     attributes: [
       {
         trait_type: "Character",
@@ -481,7 +481,7 @@ export const metadata = [
     name: "Scuba Diver",
     description: "FrogTal character as Scuba Diver with Blue Water background.",
     image: image9,
-    tokenId: "7482",
+    tokenId: "1625",
     attributes: [
       {
         trait_type: "Character",
@@ -539,7 +539,7 @@ export const metadata = [
     name: "Viking",
     description: "FrogTal character as Viker with Fire background.",
     image: image10,
-    tokenId: "7484",
+    tokenId: "1534",
     attributes: [
       {
         trait_type: "Character",

@@ -4,6 +4,7 @@ import { RiTwitterXLine } from "react-icons/ri";
 import { useState } from "react";
 import { FiMenu } from "react-icons/fi";
 import { LiaTimesSolid } from "react-icons/lia";
+import { FaTelegramPlane } from "react-icons/fa";
 
 const SingleLink = ({ text, link, icon }) => {
   return (
@@ -36,6 +37,14 @@ const Navbar = () => {
           target="_blank"
         >
           <RiTwitterXLine className="text-xl" />
+        </Link>
+
+        <Link
+          to={"https://t.me/Frogtals"}
+          className="navbar-link"
+          target="_blank"
+        >
+          <FaTelegramPlane className="text-xl" />
         </Link>
       </div>
 
@@ -80,13 +89,23 @@ const Navbar = () => {
         >
           Gallery
         </Link>
-        <Link
-          to={"https://x.com/Frogtals"}
-          className="mobile-nav-link"
-          target="_blank"
-        >
-          <RiTwitterXLine className="text-xl" />
-        </Link>
+
+        <div className="flex items-center gap-4">
+          <Link
+            to={"https://x.com/Frogtals"}
+            className="mobile-nav-link"
+            target="_blank"
+          >
+            <RiTwitterXLine className="text-xl" />
+          </Link>
+          <Link
+            to={"https://t.me/Frogtals"}
+            className="mobile-nav-link"
+            target="_blank"
+          >
+            <FaTelegramPlane className="text-xl" />
+          </Link>
+        </div>
       </div>
       {/* )} */}
     </nav>
