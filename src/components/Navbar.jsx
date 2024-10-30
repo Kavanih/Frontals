@@ -28,7 +28,10 @@ const Navbar = () => {
 
       <div className="md:flex gap-3 sm:gap-6 md:col-span-3 justify-center items-center flex-wrap hidden">
         <SingleLink text={"Home"} link={"/"} />
-        <SingleLink text={"Mint"} link={"/mint"} />
+        <SingleLink
+          text={"Mint"}
+          link={"https://fbipolar.com/details/c96fb08dee414e899f97b2eba3857655"}
+        />
         <SingleLink text={"gallery"} link={"/gallery"} />
 
         <Link
@@ -57,7 +60,6 @@ const Navbar = () => {
         {!openMenu ? <FiMenu /> : <LiaTimesSolid />}
       </div>
 
-      {/* {openMenu && ( */}
       <div
         className={`flex md:hidden flex-col items-center justify-center h-screen w-screen fixed z-10 bg-green-700 text-white duration-500 ${
           openMenu ? "left-0" : "left-full"
@@ -76,7 +78,8 @@ const Navbar = () => {
           Home
         </Link>
         <Link
-          to={"/mint"}
+          to={"https://fbipolar.com/details/c96fb08dee414e899f97b2eba3857655"}
+          // to={"/mint"}
           className="mobile-nav-link"
           onClick={() => setOpenMenu(false)}
         >
@@ -107,7 +110,6 @@ const Navbar = () => {
           </Link>
         </div>
       </div>
-      {/* )} */}
     </nav>
   );
 };

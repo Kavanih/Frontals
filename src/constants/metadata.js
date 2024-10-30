@@ -64,7 +64,7 @@ export const metadata = [
     ],
   },
   {
-    name: "Lady frog",
+    name: "Monk Frog",
     description:
       "FrogTal character as Lady frog on Lily pad with water background.",
     image: image2,
@@ -123,7 +123,7 @@ export const metadata = [
     ],
   },
   {
-    name: "Lady frog",
+    name: "Seafarer Frog",
     description:
       "FrogTal character as Lady frog on Lily pad with water background.",
     image: image3,
@@ -182,7 +182,7 @@ export const metadata = [
     ],
   },
   {
-    name: "Male frog",
+    name: "Frog with Cigar",
     description:
       "FrogTal character as Male frog on Lily pad with water background.",
     image: image4,
@@ -241,7 +241,7 @@ export const metadata = [
     ],
   },
   {
-    name: "Frog with Cigar",
+    name: "Spy",
     description: "FrogTal character with Cigar and mountains background.",
     image: image5,
     tokenId: "1872",
@@ -299,7 +299,7 @@ export const metadata = [
     ],
   },
   {
-    name: "Spy",
+    name: "Scientist",
     description: "FrogTal character as Spy in London background.",
     image: image6,
     tokenId: "1906",
@@ -357,7 +357,7 @@ export const metadata = [
     ],
   },
   {
-    name: "Scientist",
+    name: "Chef",
     description: "FrogTal character as Scientist in laboratory background.",
     image: image7,
     tokenId: "1875",
@@ -415,7 +415,7 @@ export const metadata = [
     ],
   },
   {
-    name: "Chef",
+    name: "Lady Frog",
     description: "FrogTal character as Chef in Kitchen background.",
     image: image8,
     tokenId: "1760",
@@ -478,7 +478,7 @@ export const metadata = [
     ],
   },
   {
-    name: "Scuba Diver",
+    name: "Male Frog",
     description: "FrogTal character as Scuba Diver with Blue Water background.",
     image: image9,
     tokenId: "1625",
@@ -536,7 +536,7 @@ export const metadata = [
     ],
   },
   {
-    name: "Viking",
+    name: "Scuba Diver",
     description: "FrogTal character as Viker with Fire background.",
     image: image10,
     tokenId: "1534",
